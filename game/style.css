@@ -1,0 +1,104 @@
+body {
+  background-image: url("images/bballcourt.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+
+.pointerArea {
+  position: fixed;
+  left: 520px;
+  top: 85px;
+  border: 2px solid red;
+  cursor: none;
+  height: 650px;
+  width: 400px; }
+
+#pointer {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: blue; }
+
+.cupstyle {
+  border-radius: 50%;
+  background: linear-gradient(-45deg, lightgray, lightgray 10%, white);
+  height: 69px;
+  width: 69px;
+  border: 1px solid red;
+  position: fixed; }
+
+.pingpongballmove {
+  top: 0px;
+  left: 0px;
+  animation-name: ballsize;
+  animation-duration: 1s;
+  transform: scale(0.5, 0.5) !important; }
+
+.pingpongball {
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  top: 350px;
+  left: 100px;
+  transition: left 1s, top 1s;
+  transition-timing-function: linear;
+  transition-timing-function: linear;
+  transition: left 1s, top 1s;
+  transform: scale(1, 1); }
+
+@keyframes ballsize {
+  0% {
+    transform: scale(1, 1); }
+  25% {
+    transform: scale(0.5, 0.5); }
+  50% {
+    transform: scale(1, 1); }
+  75% {
+    transform: scale(0.5, 0.5); }
+  100% {
+    transform: scale(0.5, 0.5); } }
+#cup1 {
+  top: 510px;
+  left: 1250px; }
+
+#cup2 {
+  top: 430px;
+  left: 1250px; }
+
+#cup3 {
+  top: 350px;
+  left: 1250px; }
+
+#cup4 {
+  top: 270px;
+  left: 1250px; }
+
+#cup5 {
+  top: 460px;
+  left: 1180px; }
+
+#cup6 {
+  top: 380px;
+  left: 1180px; }
+
+#cup7 {
+  top: 300px;
+  left: 1180px; }
+
+#cup8 {
+  top: 340px;
+  left: 1100px; }
+
+#cup9 {
+  top: 420px;
+  left: 1100px; }
+
+#cup10 {
+  top: 380px;
+  left: 1030px; }
+
+.hide {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
