@@ -1,0 +1,44 @@
+.header {
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(10deg, red, maroon);
+	h1 {
+		display: inline-block;
+		font-size: 36px;
+		font-style: italic;
+		color: #EEEEEE;
+		padding: 32px 5%;
+	}
+	ul {
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+		float: right;
+		li {
+			vertical-align: top;
+			display: inline-block;
+			height: 100%;
+			width: 22%;
+			transition: background-color .3s;
+			a {
+				padding-top: 20%;
+				text-align: center;
+				display: inline-block;
+				font-size: 20px;
+				color: #BBBBBB;
+				text-decoration: none;
+				width: 100%;
+				height: 80%;
+			}
+		}
+		li:hover {
+			background-color: rgba(0,0,0,.2);
+		}
+		li:active {
+			background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.6));
+		}
+	}
+}
+.current {
+	background-color: rgba(0,0,0,.2);
+}
