@@ -1,11 +1,11 @@
 .resumeBackground {
-	padding: 40px 0;
 	width: 100%;
+	padding: 40px 0;
 	background-image: url(images/resume_background.jpg);
 	.resume {
-		margin:0 auto;
-		/*max-*/width: 638px;
+		/*max-*/width: 638px;//set to max width once content is added
 		height: 825px;
+		margin:0 auto;
 		background-color: white;
 	}
 }
