@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Resume</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <script src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
-  <body>
+  <body onscroll="slide('slider'); slide('slider2'); slide('slider3'); slide('slider4'); slide('slider5'); slide('slider6')">
     <script src="script.js"></script>
     <header class="header">
       <h1>Caleb Mahala</h1>
       <ul>
-        <li class="current">
-          <a href="resume.html">Resume</a>
+        <li>
+          <a href="print_out.html">Resume</a>
         </li>
         <li>
           <a href="index.html">Portfolio</a>
@@ -22,13 +26,62 @@
           <a href="/">Contact Me</a>
         </li>
         <li>
-          <a href="/">Current Project</a>
+          <a href="current_project.html">Current Project</a>
         </li>
       </ul>
     </header>
-    <section class="resumeBackground">
-      <article class="resume">
-      </article>
+    <!-- profile section needed -->
+    <section class="sec">
+        <h3 class="slider">Personal Statement:</h3>
+        <div class="tslider">
+          <p>My goal is to be financially stable while contributing my diverse skillset to a worthy cause and a socially connected enviroment.
+          </p>
+      </div>
+    </section>
+    <section class="sec">
+        <h3 class="slider2">About Me:</h3>
+        <div class="tslider2">
+          <p>I grew up, and still live in lancaster county. I currently am enrolled at 'Thaddeus Steven's College of Technology' for 'Computer Software Engineering Technology' and my end goal is to land a position as a web developer after I finish my schooling. I am activly involved with sports and enjoy almost all forms of competition, expecially team sports.
+          </p>
+          <p class="slant"></p>
+        </div>
+    </section>
+    <section class="sec">
+        <h3 class="slider3">Web Skills:</h3>
+        <div class="tslider3">
+          <ul>
+            <li>Version control software (Git &amp; GitHub)</li>
+            <li>HTML, CSS, basic frontend JavaScript</li>
+            <li>Basic backend understanding of Rails, Phoenix, and PHP</li>
+            <li>Microsoft Office</li>
+            <li>Google</li> 
+            <li>MacOS</li>
+            <li>Teamwork</li>
+            <li>Leadership</li>
+            <li>Work ethic</li>
+          </li>
+          </ul>
+        </div>
+    </section>
+    <section class="sec">
+        <h3 class="slider4">Other Skills:</h3>
+        <div class="tslider4">
+          <ul>
+            <li>Small motor work</li>
+            <li>Vehicle mechanic work</li>
+            <li>Vehicle autobody work</li>
+            <li>landscaping</li>
+            <li>Construction</li>
+          </li>
+          </ul>
+        </div>
+    </section>
+    <section class="sec">
+        <h3 class="slider5">Team beliefs</h3>
+        <div class="tslider5">
+          <p class="slant">I am a team-first oriented person. I believe that team chemistry and comradory goes a long way in being successful. I try my best to bring my colleagues together in a positive and enjoyable work enviroment.</p>
+          <p></p>
+        </div>
     </section>
   </body>
 </html>

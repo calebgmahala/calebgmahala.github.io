@@ -1,0 +1,854 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="images/favicon.ico">
+	<title>
+		CSS3 Properties
+	</title>
+</head>
+<body class="body">
+	<div class="triangle-fixed">
+	</div>
+	<header class="header">
+		<h1 class="inline-block">CSS Properties by Caleb Mahala&trade;</h1>
+		<div class="triangle-header inline-block">
+		</div>
+	</header>
+	<section>
+		<nav class="aside">
+			<h4 class="aside-title">Navigation Bar</h4>
+			<ul class="padding-reset">
+				<li class="aside-li">
+					<a href="#flex" class="aside-button"><div class="triangle-aside"></div>Flexbox</a>
+				</li>
+				<li class="aside-li">
+					<a href="#transform" class="aside-button"><div class="triangle-aside"></div>Transform</a>
+				</li>
+				<li class="aside-li">
+					<a href="#transition" class="aside-button"><div class="triangle-aside"></div>Transition</a>
+				</li>
+				<li class="aside-li">
+					<a href="#animation" class="aside-button"><div class="triangle-aside"></div>Animation</a>
+				</li>
+				<li class="aside-li">
+					<a href="#box-shadow" class="aside-button"><div class="triangle-aside"></div>Box Shadow</a>
+				</li>
+				<li class="aside-li">
+					<a href="#text-shadow" class="aside-button"><div class="triangle-aside"></div>Text Shadow</a>
+				</li>
+				<li class="aside-li">
+					<a href="#border-radius" class="aside-button"><div class="triangle-aside"></div>Border Radius</a>
+				</li>
+				<li class="aside-li">
+					<a href="#filter" class="aside-button"><div class="triangle-aside"></div>Filter</a>
+				</li>
+				<li class="aside-li">
+					<a href="#font" class="aside-button"><div class="triangle-aside"></div>Font</a>
+				</li>
+				<li class="aside-li">
+					<a href="#outline" class="aside-button"><div class="triangle-aside"></div>Outline</a>
+				</li>
+				<li class="aside-li">
+					<a href="#gradient" class="aside-button"><div class="triangle-aside"></div>Gradient</a>
+				</li>
+			</ul>
+		</nav>
+		<section class="main-section">
+			<article class="article">
+				<div>
+					<div class="triangle-article inline-block">
+					</div>
+					<h2 id="flex" class="inline-block">Flexbox</h2>
+				</div>
+				<section class="content-section">
+					<div class="content">
+						<div class="container">
+							<div class="flex-container1">
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+							</div>
+							<div class="container-text">
+								<h4>flex-direction, row</h4>
+								<p>flex-direction: row; puts your elements one after the other in a row. By default, it will not wrap your elements. That is another command.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container2">
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+							</div>
+							<div class="container-text">
+								<h4>flex-direction, column</h4>
+								<p>flex-direction: column; puts your elements one after the other in a column. By default, it will not wrap your elements. That is another command.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container3">
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+							</div>
+							<div class="container-text">
+								<h4>flex-wrap, wrap</h4>
+								<p>flex-wrap: wrap; will bump your elements down a line or over a line depending on your direction. This does not happen by default
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container4">
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+							</div>
+							<div class="container-text">
+								<h4>Justify Content, Center</h4>
+								<p>justify-content: center; will center your elements on thier line. This makes it easy to center.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container5">
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+							</div>
+							<div class="container-text">
+								<h4>Justify Content, space-around</h4>
+								<p>justify-content: space-around; will give each object a even margin to seperate them.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+								<div class="object"></div>
+							</div>
+							<div class="container-text">
+								<h4>Align Items, Center</h4>
+								<p>align-items: center; will center elements verticly in container.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<p>Flex is a container property used to orient child elements in the container in a predictable easy way. I learned how to use flexbox by going to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a> and reading about it and looking at the examples they showed there.
+						</p>
+						<p>After setting the container element to dixplay: flex;, you can then use some of the flex properties shown to the left to align and position objects as shown.
+						</p>
+						<p>Most of the properties have other funtions as well. for instance, align-items: bottom; would verticly align the iteams at the bottom of the page. These are some of the more important properties of flex.
+						</p>
+					</div>
+				</section>
+			</article>
+			<article class="article">
+				<div class="triangle-article inline-block">
+				</div>
+				<h2 id="transform" class="inline-block">Transform</h2>
+				<section class="content-section">
+					<div class="content">
+						<div class="container">
+							<div class="flex-container6">
+								<div class="transform1"></div>
+							</div>
+							<div class="container-text">
+								<h4>Transform, Rotate</h4>
+								<p>transition: rotate(10deg); rotates the element the amount of degrees you would like.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="object">A</div>
+								<div class="transform2">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Transform, Scale</h4>
+								<p>transform: scale(2,2); scales the element and everything in it by the ratio (x,y) in the input. Used more with transition(see below)
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="transform3"></div>
+							</div>
+							<div class="container-text">
+								<h4>Transform, Skew</h4>
+								<p>transition: skew(4deg,8deg); skews the direction of the x and y lines the amount of degrees posted.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="transform4"></div>
+							</div>
+							<div class="container-text">
+								<h4>Transform, RotateX</h4>
+								<p>transition: rotateX(40deg); rotates the element the amount of degrees you would like on the x axis. You can also do this on the y axis.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<p>Transform is a css property that alows the manipulation of elements that would not normaly be able to be manipulated
+						</p>
+						<p>I learned about transform while investigating the transition element.I used <a href="https://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">https://www.w3schools.com</a> to get a basic understanding of how transform works.
+						</p>
+						<p>Most of the transform properties work better when paired with something like animation or transition. A basic understanding is neede to explain those two though
+						</p>
+					</div>
+				</section>
+			</article>
+			<article class="article">
+				<div class="triangle-article inline-block">
+				</div>
+				<h2 id="transition" class="inline-block">Transition</h2>
+				<section class="content-section">
+					<div class="content">
+						<div class="container">
+							<div class="flex-container6">
+								<div class="transition1">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Transition, Padding</h4>
+								<p>Transition: padding 1s; takes the padding 1s to change to the set hover value.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="transition2"></div>
+							</div>
+							<div class="container-text">
+								<h4>Transition, Transform</h4>
+								<p>transition: transform 2s; takes the transformation 1s to change to the set transform value. I used skew in this case.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="transition3"></div>
+							</div>
+							<div class="container-text">
+								<h4>Transition, Transform</h4>
+								<p>transition: transform 2s; takes the transformation 2s to change to the set transform value. I used rotate in this case.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="transition4"></div>
+							</div>
+							<div class="container-text">
+								<h4>Transition, Transform</h4>
+								<p>transition: transform 1s; takes the transformation 1s to change to the set transform value. I used translate in this case.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="transition5">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Transition, Transform</h4>
+								<p>transition: transform 1s; takes the transformation 1s to change to the set transform value. I used scale in this case
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="transition6"></div>
+							</div>
+							<div class="container-text">
+								<h4>Transition, background-color</h4>
+								<p>Takes the background-color 2s to change to the set background-color value. I used background-color to change to purple
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<p>Transition is a delay property used to determine the time and order properties of hover changes. This allows for hover actions to have animations
+						</p>
+						<p>I heard about the transition element from cameron. I used <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">https://www.w3schools.com/css/css3_transitions.asp</a> to get a basic understanding of how transition works.
+						</p>
+						<p>Transition can also be used with transform and animation to do some pretty cool things as well. below are the things you can do with animations and transitions.
+						</p>
+					</div>
+				</section>
+			</article>
+			<article class="article">
+				<div class="triangle-article inline-block">
+				</div>
+				<h2 id="animation" class="inline-block">Animation</h2>
+				<section class="content-section">
+					<div class="content">
+						<div class="container">
+							<div class="flex-container6">
+								<div class="animation1"></div>
+							</div>
+							<div class="container-text">
+								<h4>Animation, background-color</h4>
+								<p>Animation changing the color of the block. I used animation iteration count infinite to have it cycle continuly. Also used percentages of keyframes.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="animation2"></div>
+							</div>
+							<div class="container-text">
+								<h4>Animation, Skew</h4>
+								<p>Animation transforming the object. I used animation iteration count infinite to have it cycle continuly. I used to from keyframs.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="animation3"></div>
+							</div>
+							<div class="container-text">
+								<h4>Animation, Rotate</h4>
+								<p>Animation rotating the object. I used animation timing function to have it go consistantly instead of slowing down or speeding up.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="animation4">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Animation, Scale</h4>
+								<p>Animation scaleing the object. I used animation timing function to have it ease into the begining and end animation.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="animation5"></div>
+							</div>
+							<div class="container-text">
+								<h4>Animation, Translate</h4>
+								<p>animation moving the object. I used animation timing function to have it go consistantly instead of slowing down or speeding up.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<p>Animation is a similar property to transition. But instead of setting delay's for hover. You set the delays before hand in an animation keyframe. Set up like this @keyframes example {}.
+						It is then refrenced up in a css class as animation-name. The other animation properies are added in that same class
+						</p>
+						<p>I learned about animation while investigating the transition element.I used <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">https://www.w3schools.com/css/css3_animations.asp</a> to get a basic understanding of how animation works.
+						</p>
+						<p>Most of the animation properties have to do with timing, transitions, and repeats. Inside the animation keyframe you can add the transforms similar to how you added them in the transition property. Animation unlocks its full potential when used with transforms.
+						</p>
+					</div>
+				</section>
+			</article>
+			<article class="article">
+				<div class="triangle-article inline-block">
+				</div>
+				<h2 id="box-shadow" class="inline-block">Box Shadow</h2>
+				<section class="content-section">
+					<div class="content">
+						<div class="container">
+							<div class="flex-container6">
+								<div class="bshadow1"></div>
+							</div>
+							<div class="container-text">
+								<h4>Box Shadow, 2px</h4>
+								<p>Adds a shadow to your element. 2px offset of x and y axis
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="bshadow2"></div>
+							</div>
+							<div class="container-text">
+								<h4>Box shadow, Blure</h4>
+								<p>Adds a shadow to your element. 3px blur to the box shadow
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="bshadow3"></div>
+							</div>
+							<div class="container-text">
+								<h4>Box Shadow, Color</h4>
+								<p>Adds a shadow to your element. changed the color to blue!
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="bshadow4"></div>
+							</div>
+							<div class="container-text">
+								<h4>Box Shadow, 2 Shadows</h4>
+								<p>Adds a complete shadow to your element. 2 box shadow's needed. One with negative values.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="bshadow5"></div>
+							</div>
+							<div class="container-text">
+								<h4>Box Shadow, Wacky Borders</h4>
+								<p>Adds a complete shadow to your element. 2 different colors for each!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<p>Box shadow is a css property that adds a shadow to a element without needing to mess wth 2 elements or border. All you need to do is add in box-shadow: xoffset, yoffset, blur, color
+						</p>
+						<p>I learned about box shadow while searching for cool css3 properties.I used <a href="https://code.tutsplus.com/tutorials/10-css3-properties-you-need-to-be-familiar-with--net-16417" target="_blank">https://code.tutsplus.com</a> to get a basic understanding of how box shadow works.
+						</p>
+						<p>Box shadow is a easy way to add box shadow. You can make the shadow different colors and change the sides with negative offset values. In order to add a complete box shadow use the format box-shadow: - - - color, - - - color;
+						</p>
+					</div>
+				</section>
+			</article>
+			<article class="article">
+				<div class="triangle-article inline-block">
+				</div>
+				<h2 id="text-shadow" class="inline-block">Text Shadow</h2>
+				<section class="content-section">
+					<div class="content">
+						<div class="container">
+							<div class="flex-container6">
+								<div class="tshadow1">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Text Shadow, 2px</h4>
+								<p>Adds a shadow to your text. 2px offset of x and y axis
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="tshadow2">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Text Shadow, Blure</h4>
+								<p>Adds a shadow to your text. 3px blur to the text shadow
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="tshadow3">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Text Shadow, Color</h4>
+								<p>Adds a shadow to your text. changed the color to blue!
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="tshadow4">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Text Shadow, 2 Shadows</h4>
+								<p>Adds a complete shadow to your text. 2 text shadow's needed. One with negative values.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="tshadow5">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Text Shadow, Wacky Borders</h4>
+								<p>Adds a complete shadow to your text. 2 different colors for each!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<p>Similar to box shadow, text shadow is a css property that adds shadow to text inside of a container. It works similar to box shadow with the offset and color inputs. You can also put full shadows, similar to box shadow
+						</p>
+						<p>I learned about text shadow while searching for cool css3 properties.I used <a href="https://code.tutsplus.com/tutorials/10-css3-properties-you-need-to-be-familiar-with--net-16417" target="_blank">https://code.tutsplus.com</a> to get a basic understanding of how text shadow works.
+						</p>
+						<p>Text shadow is a easy way to add text shadow. You can make the shadow different colors and change the sides with negative offset values. In order to add a complete text shadow use the format text-shadow: - - - color, - - - color;
+						</p>
+					</div>
+				</section>
+			</article>
+			<article class="article">
+				<div class="triangle-article inline-block">
+				</div>
+				<h2 id="border-radius" class="inline-block">Border Radius</h2>
+				<section class="content-section">
+					<div class="content">
+						<div class="container">
+							<div class="flex-container6">
+								<div class="br1"></div>
+							</div>
+							<div class="container-text">
+								<h4>Border Radius, 12px</h4>
+								<p>Adds fillet to your borders
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="br2"></div>
+							</div>
+							<div class="container-text">
+								<h4>Border Radius, 50px</h4>
+								<p>Adds a huge fillet to your borders turning the object into a circle
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<a href="#border-radius" class="br3"></a>
+							</div>
+							<div class="container-text">
+								<h4>Its a link!</h4>
+								<p>Try me! no corners to click on. Yay!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<p>Border-radius is a neat css property that alows you to set fillets on the border corners. using this property you can make "button looking things" or even circles. These objects when hovered over or clicked on do not carry their old box shape. yay!
+						</p>
+						<p>I learned about Border-radius while searching for cool css3 properties.I used <a href="https://code.tutsplus.com/tutorials/10-css3-properties-you-need-to-be-familiar-with--net-16417" target="_blank">https://code.tutsplus.com</a> to get a basic understanding of how border radius works.
+						</p>
+						<p>Border radius is really cool. just set border-radius equal to a pixel radius. the bigger the number the more curves. Want less curves? try a smaller number!
+						</p>
+					</div>
+				</section>
+			</article>
+			<article class="article">
+				<div class="triangle-article inline-block">
+				</div>
+				<h2 id="filter" class="inline-block">Filter</h2>
+				<section class="content-section">
+					<div class="content">
+						<div class="container">
+							<div class="flex-container6">
+								<img src="images/apples.jpg" class="filter6">
+							</div>
+							<div class="container-text">
+								<h4>Filter none</h4>
+								<p>No filters. The original image.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<img src="images/apples.jpg" class="filter1">
+							</div>
+							<div class="container-text">
+								<h4>Filter Grayscale</h4>
+								<p>Sets the percentage of grayscale to your photo. this one is set to 100% for black and white.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<img src="images/apples.jpg" class="filter2">
+							</div>
+							<div class="container-text">
+								<h4>Filter blur</h4>
+								<p>Adds a blur to your image via a pixel value in the input. this one is set to a 2 pixel blur.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<img src="images/apples.jpg" class="filter3">
+							</div>
+							<div class="container-text">
+								<h4>Filter hue-rotate</h4>
+								<p>Rotates the hue. I don't know what hue is, but it looks really cool. ;). set to 57 degrees.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<img src="images/apples.jpg" class="filter4">
+							</div>
+							<div class="container-text">
+								<h4>Filter Invert</h4>
+								<p>Inverts the photo via a percentage input. mine is set for 100% for full inversion
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<img src="images/apples.jpg" class="filter5">
+							</div>
+							<div class="container-text">
+								<h4>Filter Opacity</h4>
+								<p>Sets the opacity for the image. This seems to me to be a great way to set opacity without changing the background. who knows
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<p>Filter is a css property that allows for the manipulation of images. Using the wide variety of tools and inputs for them, coders can change images and elements styles to fit their needs or animation standards
+						</p>
+						<p>I learned about Filter while searching for cool css3 properties.I used <a href="https://www.w3schools.com/cssref/css3_pr_filter.asp" target="_blank">https://www.w3schools.com/cssref/css3_pr_filter.asp</a> to get a basic understanding of how filter works.
+						</p>
+						<p>Filter is a great way to edit images on your website. I don't see much use for it outside of transitions and animations because Images will usualy be dealt with by the designer. You never know though
+						</p>
+					</div>
+				</section>
+			</article>
+			<article class="article">
+				<div class="triangle-article inline-block">
+				</div>
+				<h2 id="Font" class="inline-block">Font</h2>
+				<section class="content-section">
+					<div class="content">
+						<div class="container">
+							<div class="flex-container6">
+								<div class="Font1">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Font, size</h4>
+								<p>changes the size of the font. I set the one in here to 40px
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="Font2">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Font, family</h4>
+								<p>Sets the Font. I set my font to apple chancery here in this block. It is good practice to list multiple fall back fonts for fonts that are not supported
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="Font3">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Font, Style</h4>
+								<p>Adds style to your font. I used italics here.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="Font4">A</div>
+							</div>
+							<div class="container-text">
+								<h4>Font, Style</h4>
+								<p>Adds style to your font. I used italics here.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<p>Font is a commonly used css property to change the way your text appears on screen. All of the font properties are useful when dealing with text
+						</p>
+						<p>I learned about font while searching for css properties. I used <a href="https://www.w3schools.com/css/css_font.asp" target="_blank">https://www.w3schools.com/css/css_font.asp</a> to get a basic understanding of how font works, along with the knowlege I already had.
+						</p>
+						<p>Some the font styles can also be added through html. these are just ways to do it in css.
+						</p>
+					</div>
+				</section>
+			</article>
+			<article class="article">
+				<div class="triangle-article inline-block">
+				</div>
+				<h2 id="outline" class="inline-block">Outline</h2>
+				<section class="content-section">
+					<div class="content">
+						<div class="container">
+							<div class="flex-container6">
+								<div class="outline1"></div>
+							</div>
+							<div class="container-text">
+								<h4>Outline, Size</h4>
+								<p>Changed the outline size to 20px color to red, and set the style to solid.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="outline2"></div>
+							</div>
+							<div class="container-text">
+								<h4>Outline, Style</h4>
+								<p>Changed the style to double and the width to 5px
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="outline3"></div>
+							</div>
+							<div class="container-text">
+								<h4>Outline, Style</h4>
+								<p>Changed the style to dotted and the width to 10px.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="outline4"></div>
+							</div>
+							<div class="container-text">
+								<h4>Outline, Style</h4>
+								<p>Changed the style to inset.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="outline5"></div>
+							</div>
+							<div class="container-text">
+								<h4>Outline, Style</h4>
+								<p>Changed the style to groove.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<p>Outline is simmilar to border. It fills up space after the border with styles and colors. You can use it to create special borders and border outlines not possible with the border property
+						</p>
+						<p>I heard about the outline element while looking for css properties. I used <a href="https://www.w3schools.com/css/css_outline.asp" target="_blank">https://www.w3schools.com/css/css_outline.asp</a> to get a basic understanding of how outline works.
+						</p>
+						<p>Outline is nice, but you can also use border image to obtain a similar effect. Because of this I don't see a huge reason to use this property
+						</p>
+					</div>
+				</section>
+			</article>
+			<article class="article">
+				<div class="triangle-article inline-block">
+				</div>
+				<h2 id="gradient" class="inline-block">Gradient</h2>
+				<section class="content-section">
+					<div class="content">
+						<div class="container">
+							<div class="flex-container6">
+								<div class="gradient1"></div>
+							</div>
+							<div class="container-text">
+								<h4>Gradient Up Down</h4>
+								<p>Use linear-gradient(x,y) to go from x color at top to y color at bottom
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="gradient2"></div>
+							</div>
+							<div class="container-text">
+								<h4>Gradient, Degree/multiple colors</h4>
+								<p>Put a degree value in front of your first color to set the direction of your gradient. Put in multiple color values to change from one to the other.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="gradient3"></div>
+							</div>
+							<div class="container-text">
+								<h4>Gradient, Radial</h4>
+								<p>Use radial-gradient to create a gradient that comes from the center to the edges.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="gradient4"></div>
+							</div>
+							<div class="container-text">
+								<h4>Gradient, Percentage</h4>
+								<p>Put a percentage next to your color to show how much of the gradient you want it to take up. Each gradient percentage is a percentage of the container.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="gradient5"></div>
+							</div>
+							<div class="container-text">
+								<h4>Gradient, Repeating</h4>
+								<p>Repeats the gradient. the size of the repeated gradient is determined by the highest percentage given.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="gradient6"></div>
+							</div>
+							<div class="container-text">
+								<h4>Gradient, Transparency</h4>
+								<p>Can use transparency to make a fade in like effect.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="gradient7"></div>
+							</div>
+							<div class="container-text">
+								<h4>Gradient, Border</h4>
+								<p>Can set a border to a gradient using border-image. make sure to set the border-image-slice to 1.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<div class="flex-container6">
+								<div class="gradient8"></div>
+							</div>
+							<div class="container-text">
+								<h4>Gradients</h4>
+								<p>Class follow along
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<p>Gradients are a easy and cool looking way to go from one color to the next. They can be used to create any gradient in any direction using 2 or more colors
+						</p>
+						<p>I heard about the gradient property in class. I used <a href="https://www.w3schools.com/css/css3_gradients.asp" target="_blank">https://www.w3schools.com/css/css3_gradients.asp</a> to get a basic understanding of how Gradient works.
+						</p>
+						<p>In order to use this property in all browsers, you must write multiple linear gradients as back up for browsers such as firefox, opera, and safari. Specify -webkit-, -moz-, or -o- in front of the property to specify for these browsers.
+						</p>
+					</div>
+				</section>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

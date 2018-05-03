@@ -1,0 +1,22 @@
+.cp_main {
+	width: 80%;
+	margin: 0 10%;
+	background-color: white;
+	h2 {
+		padding: 20px 8%;
+		line-height: 3;
+		font-size: 35px;
+		font-family: 'Roboto Mono', monospace;
+	}
+	p {
+		padding: 20px 10%;
+		line-height: 2;
+		font-size: 30px;
+		font-family: 'Roboto Mono', monospace;
+	}
+	img {
+		display: block;
+		width: 50%;
+		margin: auto;
+	}
+}

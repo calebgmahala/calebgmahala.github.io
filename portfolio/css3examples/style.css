@@ -1,0 +1,758 @@
+.body {
+	background: linear-gradient(white, lightgrey);
+}
+.triangle-fixed {
+	width: 0px;
+	height: 0px;
+	border-right: 50px solid rgba(255,255,255,0);
+	border-bottom: 50px solid rgba(255,255,255,0);
+	border-left: 50px solid lightgreen;
+	border-top: 50px solid lightblue;
+	position: fixed;
+	border-radius: 6px;
+}
+.header {
+	width: 100%;
+	height: 100px;
+	margin: 20px 0px;
+	background: linear-gradient(lightblue, lightgreen);
+	text-align: center;
+	color: orange;
+	border-radius: 4px;
+}
+.triangle-header {
+	width: 0px;
+	height: 0px;
+	border-left: 50px solid rgba(0,0,0,0);
+	border-top: 50px solid rgba(0,0,0,0);
+	border-right: 50px solid lightblue;
+	border-bottom: 50px solid lightgreen;
+	float: right
+}
+.aside {
+	background: linear-gradient(lightgreen, lightgrey);
+	width: 120px;
+	position: fixed;
+	border: 1px solid black;
+}
+.triangle-aside {
+	width: 0px;
+	height: 0px;
+	border-right: 20px solid rgba(0,0,0,0);
+	border-bottom: 20px solid rgba(0,0,0,0);
+	border-left: 5px solid teal;
+	border-top: 5px solid aqua;
+	display: none
+}
+.aside-button:hover .triangle-aside {
+	display: block;
+}
+.aside-title {
+	text-align: center;
+	color: orange;
+}
+.aside-li {
+	height: 50px;
+}
+.aside-button {
+	width: 100%;
+	height: 100%;
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+	transition: background-color 0.5s;
+	display: flex;
+	text-align: center;
+}
+.aside-button:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+.main-section {
+	width: 1200px;
+	padding: 20px;
+	background: linear-gradient(lightblue, aliceblue);
+	margin: 40px 40px 40px 140px;
+}
+.article {
+	padding: 10px;
+	background: linear-gradient(lightgreen, lightblue);
+	border: 3px solid lightgrey;
+	margin: 0px auto 10px;
+}
+.triangle-article {
+	width: 0px;
+	height: 0px;
+	border-right: 30px solid rgba(0,0,0,0);
+	border-bottom: 30px solid rgba(0,0,0,0);
+	border-left: 10px solid teal;
+	border-top: 10px solid aqua;
+}
+.content-section {
+	display: flex;
+	flex-wrap: wrap;
+}
+.content {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.text {
+	color: black;
+	width: 27%;
+	vertical-align: top;
+	text-indent: 10px;
+	margin-left: 10px;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	width: 400px;
+	height: 200px;
+	background:linear-gradient(orange, peachpuff);
+	margin: 5px;
+	box-shadow: 1px 1px 3px black;
+}
+.container-text {
+ 	width: 170px;
+ 	height: 180px;
+ 	margin: auto;
+ 	border-left: 2px solid lightgrey;
+ 	text-indent: 10px;
+ 	padding-left: 2px;
+}
+.flex-container1 {
+	display: flex;
+	flex-direction: row;
+	width: 200px;
+	height: 186px;
+	background: orange;
+	margin: 5px;
+	border: 2px solid black;
+}
+.flex-container2 {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	height: 186px;
+	background-color: orange;
+	margin: 5px;
+	border: 2px solid black;
+}
+.flex-container3 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 200px;
+	height: 186px;
+	background-color: orange;
+	margin: 5px;
+	border: 2px solid black;
+}
+.flex-container4 {
+	display: flex;
+	justify-content: center;
+	width: 200px;
+	height: 186px;
+	background-color: orange;
+	margin: 5px;
+	border: 2px solid black;
+}
+.flex-container5 {
+	display: flex;
+	justify-content: space-around;
+	width: 200px;
+	height: 186px;
+	background-color: orange;
+	margin: 5px;
+	border: 2px solid black;
+}
+.flex-container6 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 200px;
+	height: 186px;
+	background-color: orange;
+	margin: 5px;
+	border: 2px solid black;
+}
+.transform1 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	transform: rotate(10deg);
+}
+.transform2 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	transform: scale(2,2);
+	text-align: center;
+}
+.transform3 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	transform: skew(4deg,8deg);
+	border: 2px solid black;
+}
+.transform4 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	transform: rotateX(40deg);
+	border: 2px solid black;
+}
+.transition1 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: padding 1s;
+}
+.transition1:hover {
+	padding: 25px;
+}
+.transition2 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	transition: transform 2s;
+}
+.transition2:hover {
+	transform: skew(6deg,16deg);
+}
+.transition3 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	transition: transform 2s;
+}
+.transition3:hover {
+	transform: rotate(360deg);
+}
+.transition4 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	transition: transform 1s;
+}
+.transition4:hover {
+	transform: translate(18px);
+}
+.transition5 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	transition: transform 1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.transition5:hover {
+	transform: scale(2,2);
+}
+.transition6 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	transition: background-color 2s;
+}
+.transition6:hover {
+	background-color: purple;
+}
+.animation1 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	animation-name: animation1;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+@keyframes animation1 {
+	0% {background-color: white;}
+	10% {background-color: red;}
+	20% {background-color: orange;}
+	30% {background-color: yellow;}
+	40% {background-color: green;}
+	50% {background-color: blue;}
+	60% {background-color: indigo;}
+	70% {background-color: violet;}
+	80% {background-color: grey;}
+	90% {background-color: lightgrey;}
+	100% {background-color: white;}
+}
+.animation2 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	animation-name: animation2;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes animation2 {
+	to {transform: skew(8deg, 16deg);}
+}
+.animation3 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	animation-name: animation3;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes animation3 {
+	to {transform: rotate(360deg);}
+}
+.animation4 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	animation-name: animation4;
+	animation-duration: .5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+@keyframes animation4 {
+	0% {transform: scale(1,1);}
+	50% {transform: scale(2,2);}
+	100% {transform: scale(1,1);}
+}
+.animation5 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	animation-name: animation5;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+}
+@keyframes animation5 {
+	0% {transform: translate(0px);}
+	25% {transform: translate(20px);}
+	50% {transform: translate(0px);}	
+	75% {transform: translate(-20px);}
+	100% {transform: translate(0px);}
+}
+.bshadow1 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	box-shadow: 2px 2px black;
+}
+.bshadow2 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	box-shadow: 2px 2px 3px black;
+}
+.bshadow3 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	box-shadow: 2px 2px 3px blue;
+}
+.bshadow4 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	box-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+.bshadow5 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	box-shadow: 3px 3px 5px lightgreen, -3px -3px 5px lightblue;
+}
+.tshadow1 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	text-shadow: 0px 2px black;
+	font-size: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+.tshadow2 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	text-shadow: 0px 1px 2px black;
+	font-size: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+.tshadow3 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	text-shadow: 0px 1px 2px blue;
+	font-size: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+.tshadow4 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	text-shadow: 0px 1px 1px black, 0px -1px 1px black;
+	font-size: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+.tshadow5 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	text-shadow: 0px 2px 5px lightgreen, 0px 2px 5px lightblue;
+	font-size: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+.br1 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	text-shadow: 0px 1px 2px black;
+	font-size: 32px;
+	border: 2px solid black;
+	border-radius: 12px;
+}
+.br2 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	text-shadow: 0px 1px 2px black;
+	font-size: 32px;
+	border: 2px solid black;
+	border-radius: 50px;
+}
+.br3 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	text-shadow: 0px 1px 2px black;
+	font-size: 32px;
+	border: 2px solid black;
+	border-radius: 50px;
+}
+.filter1 {
+	width: 130px;
+	height: 90px;
+	margin: 5px;
+	filter: grayscale(100%);
+}
+.filter2 {
+	width: 130px;
+	height: 90px;
+	margin: 5px;
+	filter: blur(2px);
+}
+.filter3 {
+	width: 130px;
+	height: 90px;
+	margin: 5px;
+	filter: hue-rotate(57deg);
+}
+.filter4 {
+	width: 130px;
+	height: 90px;
+	margin: 5px;
+	filter: invert(100%);
+}
+.filter5 {
+	width: 130px;
+	height: 90px;
+	margin: 5px;
+	filter: opacity(30%);
+}
+.filter6 {
+	width: 130px;
+	height: 90px;
+	margin: 5px;
+}
+.Font1 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+.Font2 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	font-family: apple chancery;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+.Font3 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	display: flex;
+	font-style: italic;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+.Font4 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+.outline1 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline-width: 20px;
+	outline-color: red;
+	outline-style: solid;
+}
+.outline2 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline-width: 5px;
+	outline-color: red;
+	outline-style: double;
+}
+.outline3 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline-width: 10px;
+	outline-color: red;
+	outline-style: dotted;
+}
+.outline4 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline-width: 10px;
+	outline-color: red;
+	outline-style: inset;
+}
+.outline5 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline-width: 10px;
+	outline-color: red;
+	outline-style: groove;
+}
+.gradient1 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	background-color: lightblue;
+	background: linear-gradient(lightblue, lightgreen);
+	background: -webkit-linear-gradient(lightblue, lightgreen);
+	background: -moz-linear-gradient(lightblue, lightgreen);
+	background: -o-linear-gradient(lightblue, lightgreen);
+}
+.gradient2 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	background-color: lightblue;
+	background: linear-gradient(135deg, lightblue, lightgreen, lightblue);
+	background: -webkit-linear-gradient(135deg, lightblue, lightgreen, lightblue);
+	background: -moz-linear-gradient(135deg, lightblue, lightgreen, lightblue);
+	background: -o-linear-gradient(135deg, lightblue, lightgreen, lightblue);
+}
+.gradient3 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	background-color: lightblue;
+	background: radial-gradient(lightblue, lightgreen);
+	background: -webkit-radial-gradient(lightblue, lightgreen);
+	background: -moz-radial-gradient(lightblue, lightgreen);
+	background: -o-radial-gradient(lightblue, lightgreen);
+}
+.gradient3 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	background-color: lightblue;
+	background: radial-gradient(lightblue, lightgreen);
+	background: -webkit-radial-gradient(lightblue, lightgreen);
+	background: -moz-radial-gradient(lightblue, lightgreen);
+	background: -o-radial-gradient(lightblue, lightgreen);
+}
+.gradient4 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	background-color: lightblue;
+	background: linear-gradient(lightblue 70%, lightgreen);
+	background: -webkit-linear-gradient(lightblue 70%, lightgreen);
+	background: -moz-linear-gradient(lightblue 70%, lightgreen);
+	background: -o-linear-gradient(lightblue 70%, lightgreen);
+}
+.gradient5 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	background-color: lightblue;
+	background: repeating-linear-gradient(blue, lightblue 50%, lightgreen 60%);
+	background: -webkit-repeating-linear-gradient(blue, lightblue 50%, lightgreen 60%);
+	background: -moz-repeating-linear-gradient(blue, lightblue 50%, lightgreen 60%);
+	background: -o-repeating-linear-gradient(blue, lightblue 50%, lightgreen 60%);
+}
+.gradient6 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	background-color: lightblue;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background: -o-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+.gradient7 {
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 5px;
+	border-color: lightblue;
+	border-width: 5px;
+	border-style: solid;
+	border-image: linear-gradient(0deg, teal, lightblue, lightgreen);
+	border-image: -webkit-linear-gradient(0deg, teal, lightblue, lightgreen);
+	border-image: -moz-linear-gradient(0deg, teal, lightblue, lightgreen);
+	border-image: -o-linear-gradient(0deg, teal, lightblue, lightgreen);
+	border-image-slice: 1;
+}
+.gradient8 {
+	width: 100px;
+	height: 100px;
+	background: white;
+	margin: 5px;
+	background-color: none;
+	background: repeating-radial-gradient(rgba(255,255,255,0)10%, red 30%);
+	background: -webkit-repeating-radial-gradient(rgba(255,255,255,0)10%, red 30%);
+	background: -moz-repeating-radial-gradient(rgba(255,255,255,0)10%, red 30%);
+	background: -o-repeating-radial-gradient(rgba(255,255,255,0)10%, red 30%);
+	border-color: red;
+	border-width: 3px;
+	border-style: solid;
+	border-image: linear-gradient(-70deg, grey, black, red);
+	border-image: -webkit-linear-gradient(-70deg, grey, black, red);
+	border-image: -moz-linear-gradient(-70deg, grey, black, red);
+	border-image: -o-linear-gradient(-70deg, grey, black, red);
+	border-image-slice: 1;
+}
+.object {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	margin: 5px;
+	text-align: center;
+}
+.inline-block {
+	display: inline-block;
+}
+.padding-reset {
+	padding: 0px;
+}
