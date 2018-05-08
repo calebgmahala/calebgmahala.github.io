@@ -292,4 +292,25 @@ table {
     width: 50%;
     margin: auto; }
 
+.complimentImg {
+  background-image: url("images/email.jpeg");
+  background-size: cover;
+  display: inline-block;
+  width: 50%;
+  padding-top: 50%;
+  opacity: .4; }
+
+.sidebox {
+  display: inline-block;
+  width: 49%;
+  padding-top: 50%;
+  background-color: white; }
+  .sidebox ul {
+    line-height: 5;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    font-family: 'Rock Salt', cursive;
+    color: black; }
+
 /*# sourceMappingURL=style.css.map */
