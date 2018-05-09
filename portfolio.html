@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/favicon.ico">
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header class="header">
+      <h1>Caleb Mahala</h1>
+      <ul>
+        <li>
+          <a href="index.html">About Me</a>
+        </li>
+        <li class="current">
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Me</a>
+        </li>
+        <li>
+          <a href="current_project.html">Current Project</a>
+        </li>
+      </ul>
+    </header>
+    <section class="main">
+      <div class="ItemContainer">
+        <h2>HTML First Project</h2>
+        <div class="fill" onclick="popup('#i0')">
+          <img class="Item" src="images/i0.png">
+        </div>
+      </div>
+      <div class="ItemContainer">
+        <h2>CSS Properties</h2>
+        <div class="fill" onclick="popup('#i1')">
+          <img class="Item" src="images/i1.png">
+        </div>
+      </div>
+      <div class="ItemContainer">
+        <h2>Open Source</h2>
+        <div class="fill" onclick="popup('#i6')">
+          <img class="Item" src="images/i6.png">
+        </div>
+      </div>
+      <div class="ItemContainer">
+        <h2>Tech Lancaster</h2>
+        <div class="fill" onclick="popup('#i2')">
+          <img class="Item" src="images/i2.png">
+        </div>
+      </div>
+      <div class="ItemContainer">
+        <h2>Thaddeus Dashboard</h2>
+        <div class="fill" onclick="popup('#i3')">
+          <img class="Item" src="images/i3.png">
+        </div>
+      </div>
+      <div class="ItemContainer">
+        <h2>Beer Pong</h2>
+        <div class="fill" onclick="popup('#i4')">
+          <img class="Item" src="images/i4.png">
+        </div>
+      </div>
+    </section>
+    <div class="ScreenDim" onclick="popup('reset')"></div>
+    <article id="i0" class="info">
+      <div class="InfoHeader">
+        <h3>HTML First Project</h3>
+      </div>
+      <p>This was my very first project at Thaddeus Stevens and my first introduction to HTML. We learned the basics of HTML5 and how to open .html files in the browser
+      </p>
+      <a href="portfolio/glt_improved/index.html" target='blank'>Link to site!</a>
+    </article>
+    <article id="i1" class="info">
+      <div class="InfoHeader">
+        <h3>CSS Properites</h3>
+      </div>
+      <p>This is one of my most useful projects that I still use to this day. This project was made to teach us some more advanced CSS3 properties that we would then share to the class. This was by far my favorite project.
+      </p>
+      <a href="portfolio/css3examples/index.html" target='blank'>Link to site!</a>
+    </article>
+    <article id="i2" class="info">
+      <div class="InfoHeader">
+        <h3>Tech Lancaster</h3>
+      </div>
+      <p>This was a website recreation that was designed by our professor. We worked in small teams simmulating a front-end project. This project went really well for our group, and we learned the importance of pre-planning from this project
+      </p>
+      <a href="https://calebgmahala.github.io/tech_lancaster" target='blank'>Link to site!</a>
+    </article>
+    <article id="i3" class="info">
+      <div class="InfoHeader">
+        <h3>Thaddeus Dashboard</h3>
+      </div>
+      <p>This was the final project recreation for our front-end course/semester. Again, we worked in small teams to accomplish this project. My group did fenominaly on this project and where able to finish well before the deadline. All of the projects before this one prepared us, so my group had barely any difficulties. Even with the newly introduced javascript that we had been learning.
+      </p>
+      <a href="https://calebgmahala.github.io/CSET-Final/" target='blank'>Link to site!</a>
+    </article>
+    <article id="i4" class="info">
+      <div class="InfoHeader">
+        <h3>Beer Pong</h3>
+      </div>
+      <p>As part of our front-end course, We where tasked with creating a javascript project in groups of two. Me and my buddy originally wanted to do pong in a browser, but I completed that project the day the project was assigned. My buddy and I then decided to make a two player beer pong game. This project took us a while, but is one of the projects I am most proud of. This is soley HTML, CSS, and javascript running in a browser. This game still has resolution issues that I have yet to fix.
+      </p>
+      <a href="https://calebgmahala.github.io/imageslider/" target='blank'>Link to game!</a>
+    </article>
+    <article id="i5" class="info">
+      <div class="InfoHeader">
+        <h3>FuRy</h3>
+      </div>
+    </article>
+    <article id="i6" class="info">
+      <div class="InfoHeader">
+        <h3>Open Source</h3>
+      </div>
+      <p>This was a website recreation that was designed by our professor. We worked in small teams simmulating a front-end project. This project was the first time we would use javascript. We learned javascript as we went and finished the project on time and well done. Me and my group had issues dividing up the work evenly so some people did not have as much work to do throughout the project. This taught us to plan on doing the difficult and neccisarry stuff first so people can alwase be busy.
+      </p>
+      <a href="https://calebgmahala.github.io/open-source/" target='blank'>Link to site!</a>
+    </article>
+  </body>
+</html>

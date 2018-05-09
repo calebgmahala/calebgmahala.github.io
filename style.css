@@ -85,6 +85,32 @@ table {
 .current {
   background-color: black; }
 
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 160px;
+    text-align: center; }
+    .header h1 {
+      display: block;
+      padding: 22px 0;
+      font-size: 30px; }
+    .header ul {
+      display: block;
+      width: 100%;
+      height: 70px;
+      margin: auto; }
+      .header ul li {
+        border-bottom: 2px solid;
+        transition: border-bottom-color .3s; }
+      .header ul li:hover {
+        border-bottom-color: white;
+        background-color: transparent; }
+      .header ul li:active {
+        border-bottom-color: white;
+        background-color: transparent; }
+
+  .current {
+    border-color: white !important;
+    background-color: transparent; } }
 .back {
   position: fixed;
   top: 0;
@@ -169,6 +195,10 @@ table {
 .show {
   opacity: 1; }
 
+@media only screen and (max-width: 768px) {
+  .sec {
+    height: auto;
+    padding-bottom: 10%; } }
 .main {
   max-width: 1040px;
   height: 600px;
@@ -273,6 +303,9 @@ table {
     font-size: 25px;
     font-family: 'Roboto Mono', monospace; }
 
+@media only screen and (max-width: 500px) {
+  .main {
+    height: 60vh; } }
 .cp_main {
   width: 80%;
   margin: 0 10%;
@@ -292,6 +325,14 @@ table {
     width: 50%;
     margin: auto; }
 
+@media only screen and (max-width: 500px) {
+  .cp_main p {
+    padding: 20px 10%;
+    line-height: 2;
+    font-size: 24px;
+    font-family: 'Roboto Mono', monospace; }
+  .cp_main img {
+    width: 100%; } }
 .complimentImg {
   background-image: url("images/email.jpeg");
   background-size: cover;
@@ -306,10 +347,11 @@ table {
   padding-top: 50%;
   background-color: white; }
   .sidebox ul {
-    line-height: 5;
+    line-height: 4;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 60%;
+    font-size: 1.5vw;
     font-family: 'Rock Salt', cursive;
     color: black; }
 
