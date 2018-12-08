@@ -308,7 +308,12 @@ table {
 
 @media only screen and (max-width: 500px) {
   .main {
-    height: 60vh; } }
+    height: 60vh; }
+
+  .popup p {
+    font-size: 16px; }
+  .popup a {
+    font-size: 16px; } }
 .cp_main {
   width: 80%;
   margin: 0 10%;
@@ -377,7 +382,7 @@ table {
       line-height: 4;
       padding: 20px;
       position: static;
-      font-size: 1.5vw;
+      font-size: 4vw;
       font-family: 'Rock Salt', cursive;
       color: black; } }
 
